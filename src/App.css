@@ -1,38 +1,215 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+  font-family: 'Poppins', sans-serif;
+}
+
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* Header styles */
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #75B996;
+  color: #fff;
+  flex: none;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.App-header-img {
+  width:3%;
+  padding: 0 1rem;
+}
+
+.App-header p {
+  background-color: #75B996;
+  color: #fff;
+  padding: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+/* Footer styles */
+
+footer {
+  background-color: #75B996;
+	color: #fff;
+  left:0;
+  bottom:0;
+  right:0;
+  z-index: 10;
+  display:flex;
+  justify-content: center;
+}
+
+footer p {
+  color: #fff;
+	padding: 0;
+	float: center;
+	z-index: 10;
+	position: relative;
+  font-size:large;
+}
+
+/* Home page content styles */
+
+.home-page {
+  float: center;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: .8;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  mix-blend-mode: overlay;
+  opacity: 0.8;
+}
+
+.home-page img {
+  margin: 0;
+  float: center;
+  height: auto;
+  z-index: 10;
+  position: relative;
+}
+
+.home-page h1 {
+	color: #fff;
+	float: center;
+	font-size: xxx-large;
+	margin: 0;
+	z-index: 10;
+	position: relative;
+	-webkit-text-stroke: 2px black;
+}
+
+.home-page h2 {
+	color: #fff;
+	padding: 0;
+	float: center;
+	font-size: xx-large;
+	margin: 0;
+	z-index: 10;
+	position: relative;
+	-webkit-text-stroke: 2px black;
+}
+
+/* Navigation bar styles */
+
+.nav {
+  margin: 0;
+  padding: 0 1rem;
+  display: flex;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  float:right;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 1rem;
+  align-items: center;
+}
+
+.nav li a:hover {
+	color: #ccc;
+}
+
+p {
+	color: #fff;
+	float: center;
+	position: relative;
+}
+
+html, body { height: 100%;
+  margin: 0; }
+
+/* Form styles */
+
+.form{
+  background-color: #75B996;
+  border-radius: 5px;
+  width: 550px;
+  margin: 20px auto;
+  padding: 20px;
+  /* height: 600px; */
+}
+
+.form h1 {
+  text-align: center;
+  color: #fff;
+}
+
+.form-body{
+  text-align: left;
+  padding: 20px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+.form button {
+  margin: auto;
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-body > *{
+    padding: 5px;
+}
+
+.form__label{
+  display: flex;
+  width: auto;
+}
+
+.form__input{
+  width: auto;
+  display: flex;
+}
+
+.footer{
+    text-align: center;
 }
